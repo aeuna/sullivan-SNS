@@ -25,9 +25,6 @@ const useStyles = makeStyles((theme) => ({
       transition: 'all 0.2s ',
     },
   },
-  fileBtn: {
-    display: 'none',
-  },
 }));
 
 const PhotoPreview = ({ photoUrl, attachFile, loading }) => {
@@ -55,7 +52,6 @@ const PhotoPreview = ({ photoUrl, attachFile, loading }) => {
               onClick={handleAttachFile}
             >
               사진을 업로드 하세요.
-              <input type='file' id='upload' className={classes.fileBtn} />
             </Typography>
           )}
         </Paper>
